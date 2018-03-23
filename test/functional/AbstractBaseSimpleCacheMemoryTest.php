@@ -190,9 +190,15 @@ class AbstractBaseSimpleCacheMemoryTest extends TestCase
         $subject = $this->createInstance();
 
         $subject->clear();
-        $subject->get($key1, function () use ($val1, &$invocations) { ++$invocations;
+        $subject->get(
+            $key1,
+            function () use ($val1, &$invocations) {
+                ++$invocations;
 
-return $val1; }, $ttl);
+                return $val1;
+            },
+            $ttl
+        );
         $subject->get($key2, $val2, $ttl);
         $subject->get($key3, $val3, $ttl);
 

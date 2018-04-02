@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Cache\FuncTest;
+namespace Dhii\Cache\UnitTest;
 
 use Dhii\Cache\MemoryMemoizer as TestSubject;
 use Xpmock\TestCase;

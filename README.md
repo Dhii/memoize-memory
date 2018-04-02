@@ -9,6 +9,23 @@
 
 
 ## Details
-An in-memory memoizer implementation.
+An in-memory memoizer implementation, compatible with the [`dhii/simple-cache-interface`][dhii/simple-cache-interface]
+standard.
 
-[Dhii]: https://github.com/Dhii/dhii
+### Classes
+- [`MemoryMemoizer`][MemoryMemoizer] - A simple concrete [`SimpleCacheInterface`][SimpleCacheInterface] implementation
+that persists in memory for a single runtime.
+- [`AbstractBaseContainerMemory`][AbstractBaseContainerMemory] - Base functionality for
+[`Dhii\Cache\ContainerInterface`][Dhii\Cache\ContainerInterface] implementations, which is enough for most memoizing needs.
+- [`AbstractBaseSimpleCacheMemory`][AbstractBaseSimpleCacheMemory] - Base functionality for complete
+[`SimpleCacheInterface`][SimpleCacheInterface] implementations, which provides additional methods of controlling cache.
+
+[Dhii]:                                     https://github.com/Dhii/dhii
+[dhii/simple-cache-interface]:              https://packagist.org/packages/dhii/simple-cache-interface
+
+[AbstractBaseContainerMemory]:              src/AbstractBaseContainerMemory.php
+[AbstractBaseSimpleCacheMemory]:            src/AbstractBaseSimpleCacheMemory.php
+[MemoryMemoizer]:                           src/MemoryMemoizer.php
+
+[SimpleCacheInterface]:                     https://github.com/Dhii/simple-cache-interface/blob/develop/src/SimpleCacheInterface.php
+[Dhii\Cache\ContainerInterface]:            https://github.com/Dhii/simple-cache-interface/blob/develop/src/ContainerInterface.php

@@ -16,7 +16,7 @@
         "dhii/data-container-base": "^0.1-alpha2",
         "dhii/container-helper-base": "^0.1-alpha5",
         "dhii/data-object-abstract": "^0.1",
-        "dhii/callback-abstract": "^0.1-alpha2",
+        "dhii/callback-abstract": "0.1-alpha2",
         "dhii/simple-cache-interface": "^0.1",
         "dhii/invocable-base": "^0.1",
         "dhii/map": "^0.1",

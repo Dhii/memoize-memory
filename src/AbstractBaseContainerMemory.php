@@ -5,14 +5,26 @@ namespace Dhii\Cache;
 use Dhii\Collection\AbstractBaseCountableMap;
 use Dhii\Data\Container\ContainerSetCapableTrait;
 use Dhii\Data\Object\SetDataCapableTrait;
+use Dhii\Exception\CreateInternalExceptionCapableTrait;
 use Dhii\Exception\CreateRuntimeExceptionCapableTrait;
 use Dhii\Invocation\CreateInvocationExceptionCapableTrait;
+use Dhii\Invocation\CreateReflectionForCallableCapableTrait;
 use Dhii\Invocation\InvokeCallableCapableTrait;
+use Dhii\Invocation\NormalizeCallableCapableTrait;
+use Dhii\Invocation\NormalizeMethodCallableCapableTrait;
+use Dhii\Invocation\ValidateParamsCapableTrait;
+use Dhii\Iterator\CountIterableCapableTrait;
 use Dhii\Util\Normalization\NormalizeArrayCapableTrait;
+use Dhii\Util\Normalization\NormalizeIterableCapableTrait;
 use Dhii\Util\String\StringableInterface as Stringable;
+use Dhii\Validation\CreateValidationFailedExceptionCapableTrait;
+use Dhii\Validation\GetArgsListErrorsCapableTrait;
+use Dhii\Validation\GetValueTypeErrorCapableTrait;
 use InvalidArgumentException;
 use Exception as RootException;
 use Psr\Container\ContainerExceptionInterface;
+use ReflectionFunction;
+use ReflectionMethod;
 
 /**
  * Base implementation of a cache container.
@@ -45,11 +57,59 @@ abstract class AbstractBaseContainerMemory extends AbstractBaseCountableMap impl
      */
     use ContainerSetCapableTrait;
 
+    /* Validation of parameters.
+     *
+     * @since [*next-version*]
+     */
+    use ValidateParamsCapableTrait;
+
+    /* Ability to retrieve args list validation errors.
+     *
+     * @since [*next-version*]
+     */
+    use GetArgsListErrorsCapableTrait;
+
+    /* Ability to retrieve a value type error.
+     *
+     * @since [*next-version*]
+     */
+    use GetValueTypeErrorCapableTrait;
+
+    /* Ability to count an iterable.
+     *
+     * @since [*next-version*]
+     */
+    use CountIterableCapableTrait;
+
     /* Normalization to array.
      *
      * @since [*next-version*]
      */
     use NormalizeArrayCapableTrait;
+
+    /* Normalization of callbacks to uniform format.
+     *
+     * @since [*next-version*]
+     */
+    use NormalizeCallableCapableTrait;
+
+    /* Normalization of callbacks that invoke methods.
+     *
+     * @since [*next-version*]
+     */
+    use NormalizeMethodCallableCapableTrait;
+
+    /* Normalization of iterable.
+     *
+     * @since [*next-version*]
+     */
+    use NormalizeIterableCapableTrait;
+
+    /* Ability to create a reflection for a callable.
+     *
+     * @since [*next-version*]
+     */
+    use CreateReflectionForCallableCapableTrait;
 
     /* Factory of Runtime exception.
      *
@@ -62,6 +122,18 @@ abstract class AbstractBaseContainerMemory extends AbstractBaseCountableMap impl
      * @since [*next-version*]
      */
     use CreateInvocationExceptionCapableTrait;
+
+    /* Factory of Internal exception.
+     *
+     * @since [*next-version*]
+     */
+    use CreateInternalExceptionCapableTrait;
+
+    /* Factory of Validation Failed exception.
+     *
+     * @since [*next-version*]
+     */
+    use CreateValidationFailedExceptionCapableTrait;
 
     /**
      * {@inheritdoc}
@@ -121,5 +193,25 @@ abstract class AbstractBaseContainerMemory extends AbstractBaseCountableMap impl
     protected function _getGeneratorArgs($key, $generator, $ttl)
     {
         return [$key, $ttl];
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @since [*next-version*]
+     */
+    protected function _createReflectionMethod($className, $methodName)
+    {
+        return new ReflectionMethod($className, $methodName);
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @since [*next-version*]
+     */
+    protected function _createReflectionFunction($functionName)
+    {
+        return new ReflectionFunction($functionName);
     }
 }

@@ -23,7 +23,7 @@ use Exception as RootException;
  *
  * @since [*next-version*]
  */
-class AbstractBaseSimpleCacheMemory extends AbstractBaseContainerMemory implements SimpleCacheInterface
+abstract class AbstractBaseSimpleCacheMemory extends AbstractBaseContainerMemory implements SimpleCacheInterface
 {
     /* Factory of datastore object.
      *

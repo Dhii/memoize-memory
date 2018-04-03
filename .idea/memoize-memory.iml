@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Dhii\Cache\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/codeclimate/php-test-reporter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/args-list-validation" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/cache-abstract" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/callback-abstract" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/collections-interface" />
@@ -21,6 +22,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/data-path-aware-interface" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/exception" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/exception-interface" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/factory-interface" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/i18n-helper-base" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/i18n-interface" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/invocable-base" />
@@ -34,6 +36,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/php-cs-fixer-config" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/simple-cache-interface" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/stringable-interface" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/validation-abstract" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/validation-base" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/validation-interface" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/friendsofphp/php-cs-fixer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzle/guzzle" />
@@ -75,6 +80,7 @@
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/codeclimate/php-test-reporter" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/args-list-validation" />
           <root url="file://$MODULE_DIR$/vendor/dhii/cache-abstract" />
           <root url="file://$MODULE_DIR$/vendor/dhii/callback-abstract" />
           <root url="file://$MODULE_DIR$/vendor/dhii/collections-interface" />
@@ -89,6 +95,7 @@
           <root url="file://$MODULE_DIR$/vendor/dhii/data-path-aware-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/exception" />
           <root url="file://$MODULE_DIR$/vendor/dhii/exception-interface" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/factory-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/i18n-helper-base" />
           <root url="file://$MODULE_DIR$/vendor/dhii/i18n-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/invocable-base" />
@@ -102,6 +109,9 @@
           <root url="file://$MODULE_DIR$/vendor/dhii/php-cs-fixer-config" />
           <root url="file://$MODULE_DIR$/vendor/dhii/simple-cache-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/stringable-interface" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/validation-abstract" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/validation-base" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/validation-interface" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/friendsofphp/php-cs-fixer" />
           <root url="file://$MODULE_DIR$/vendor/guzzle/guzzle" />
@@ -139,6 +149,7 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/codeclimate/php-test-reporter" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/args-list-validation" />
           <root url="file://$MODULE_DIR$/vendor/dhii/cache-abstract" />
           <root url="file://$MODULE_DIR$/vendor/dhii/callback-abstract" />
           <root url="file://$MODULE_DIR$/vendor/dhii/collections-interface" />
@@ -153,6 +164,7 @@
           <root url="file://$MODULE_DIR$/vendor/dhii/data-path-aware-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/exception" />
           <root url="file://$MODULE_DIR$/vendor/dhii/exception-interface" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/factory-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/i18n-helper-base" />
           <root url="file://$MODULE_DIR$/vendor/dhii/i18n-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/invocable-base" />
@@ -166,6 +178,9 @@
           <root url="file://$MODULE_DIR$/vendor/dhii/php-cs-fixer-config" />
           <root url="file://$MODULE_DIR$/vendor/dhii/simple-cache-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/stringable-interface" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/validation-abstract" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/validation-base" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/validation-interface" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/friendsofphp/php-cs-fixer" />
           <root url="file://$MODULE_DIR$/vendor/guzzle/guzzle" />
